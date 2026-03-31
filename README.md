@@ -2,10 +2,6 @@
 
 `scanline-wl` is a small standalone Linux desktop overlay app that draws a CRT-like scanline mask over the whole Wayland desktop.
 
-It is intentionally simple:
-- one transparent click-through overlay per monitor
-- layer-shell based, so it sits above normal windows
-- preset-based tuning for subtle or stronger pixel-art looks
 
 ## Support Status
 
