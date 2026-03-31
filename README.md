@@ -25,7 +25,6 @@ It is intentionally simple:
 
 This app targets Wayland compositors that support layer-shell.
 In practice, the safest target is a wlroots-style setup such as Hyprland or Sway.
-It does not require Caelestia, Quickshell, or your exact desktop shell setup.
 
 Install the runtime dependencies first:
 
