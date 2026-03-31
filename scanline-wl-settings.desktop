@@ -1,0 +1,9 @@
+# template entry for the repo itself.
+# for a real local install, run: python3 scripts/install_desktop_entries.py
+[Desktop Entry]
+Type=Application
+Name=Scanline WL Settings
+Comment=Adjust scanline overlay intensity and behavior
+Exec=python3 /path/to/scanline-wl/scanline_wl.py --settings
+Terminal=false
+Categories=Graphics;Utility;Settings;
