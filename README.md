@@ -10,8 +10,6 @@ It is intentionally simple:
 ## Support Status
 
 - tested most directly on `Hyprland`
-- does not depend on `Caelestia` or `Quickshell`
-- should behave similarly on other layer-shell Wayland compositors
 - currently has the best panel-edge compensation on `Hyprland`, because it reads `hyprctl -j monitors`
 - on non-Hyprland compositors, the overlay should still run, but reserved panel space may not be compensated the same way
 - "Wayland" alone is not a guarantee; compositor support still matters
