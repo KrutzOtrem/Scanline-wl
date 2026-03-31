@@ -7,6 +7,15 @@ It is intentionally simple:
 - layer-shell based, so it sits above normal windows
 - preset-based tuning for subtle or stronger pixel-art looks
 
+## Support Status
+
+- tested most directly on `Hyprland`
+- does not depend on `Caelestia` or `Quickshell`
+- should behave similarly on other layer-shell Wayland compositors
+- currently has the best panel-edge compensation on `Hyprland`, because it reads `hyprctl -j monitors`
+- on non-Hyprland compositors, the overlay should still run, but reserved panel space may not be compensated the same way
+- "Wayland" alone is not a guarantee; compositor support still matters
+
 ## Requirements
 
 - Wayland compositor with layer-shell support
@@ -18,6 +27,7 @@ It is intentionally simple:
 
 This app targets Wayland compositors that support layer-shell.
 In practice, the safest target is a wlroots-style setup such as Hyprland or Sway.
+It does not require Caelestia, Quickshell, or your exact desktop shell setup.
 
 Install the runtime dependencies first:
 
@@ -142,6 +152,9 @@ This writes user-local `.desktop` files into `~/.local/share/applications` with 
 
 ## Notes
 
+- This is a standalone app, not a Quickshell/Caelestia module.
+- The overlay is designed to be click-through.
+- The current code is tested most directly on Hyprland.
 - The current MVP targets Wayland first.
 - Saved settings live at `~/.config/scanline-wl/config.json`.
 - Login autostart is managed through `~/.config/autostart/scanline-wl.desktop`.
