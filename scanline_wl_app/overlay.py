@@ -14,7 +14,7 @@ from .paths import LAYER_SHELL_LIB
 def ensure_layer_shell_preloaded() -> None:
     # gtk layer shell only works reliably here if the helper library is preloaded
     # before gi imports happen, so we handle that up front and re-exec ourselves.
-    if os.environ.get("GTK4_LAYER_SHELL_PRELOADED") == "1" or not LAYER_SHELL_LIB.exists():
+    if os.environ.get("GTK4_LAYER_SHELL_PRELOADED") == "1" or not LAYER_SHELL_LIB:
         return
 
     current_preload = os.environ.get("LD_PRELOAD", "")
