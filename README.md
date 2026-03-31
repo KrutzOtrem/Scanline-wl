@@ -150,10 +150,6 @@ This writes user-local `.desktop` files into `~/.local/share/applications` with 
 
 ## Notes
 
-- This is a standalone app, not a Quickshell/Caelestia module.
-- The overlay is designed to be click-through.
-- The current code is tested most directly on Hyprland.
-- The current MVP targets Wayland first.
 - Saved settings live at `~/.config/scanline-wl/config.json`.
 - Login autostart is managed through `~/.config/autostart/scanline-wl.desktop`.
 - The settings window can save, apply, start/replace, and stop the overlay.
